@@ -26,7 +26,8 @@ HoneyBadger.prototype.fightSnake = function(snake) {
  * @param {function} done Called when done.
  */
 HoneyBadger.prototype.sleepOffVenomDose = function(done) {
-  setTimeout(done, 500);
+  var venomStrength = Math.ceil(Math.random() * 500);
+  setTimeout(done, venomStrength);
 };
 
 
@@ -45,7 +46,8 @@ HoneyBadger.prototype.eatSnake = function(snake) {
  * @return {boolean} Larvae eaten.
  */
 HoneyBadger.prototype.eatLarvae = function() {
-  for (var i = 1; i < 1000; ++i) {
+  var numAngryBees = 500 + Math.ceil(Math.random() * 1000);
+  for (var i = 0; i < numAngryBees; ++i) {
     this.emit('stung');
   }
   return true;
