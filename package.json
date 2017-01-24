@@ -17,8 +17,8 @@
     "url": "https://github.com/tschaub/thehoneybadger/issues"
   },
   "devDependencies": {
-    "mocha": "1.12.0",
-    "chai": "1.7.2"
+    "mocha": "3.2.0",
+    "chai": "3.5.0"
   },
   "scripts": {
     "test": "mocha spec.js --reporter spec"
