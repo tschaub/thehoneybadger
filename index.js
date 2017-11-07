@@ -1,5 +1,5 @@
-var util = require('util');
-var EventEmitter = require('events').EventEmitter;
+import util from 'util';
+import { EventEmitter } from 'events';
 
 function HoneyBadger() {
   EventEmitter.call(this);
@@ -58,4 +58,4 @@ HoneyBadger.prototype.eatLarvae = function() {
  * Unleash the honey badger.
  * @type {HoneyBadger}
  */
-exports = module.exports = new HoneyBadger();
+export default new HoneyBadger();

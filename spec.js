@@ -1,5 +1,5 @@
-var hb = require('./index');
-var expect = require('chai').expect;
+import hb from './index';
+import { expect } from 'chai';
 
 describe('the honey badger', function() {
 
